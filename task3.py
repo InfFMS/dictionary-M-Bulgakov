@@ -6,9 +6,9 @@
 # Абракадабра
 # Вывод
 # а-5 б-2 д-1 к-1 р-2
-l1 = input().lower()
+s = input().lower()
 d = {}
-for i in range(len(l1)):
+for i in range(len(s)):
     counter = 1
     if i == 0:
         d[s[0]] = 1
@@ -17,5 +17,5 @@ for i in range(len(l1)):
             if s[j] == s[i]:
                 counter += 1
             d[s[i]] = str(counter)
-    print(s[i])
+    print(str(s[i])[1:-1:])
 print(d)
