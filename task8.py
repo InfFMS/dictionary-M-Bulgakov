@@ -15,7 +15,7 @@ def shifr(q):
         return o
     if q == 2:
         o = ''
-        a = input('ВВЕДИТЕ СЛОВО ДЛЯ ШИФРОВАНИЯ: ')
+        a = input('ВВЕДИТЕ СЛОВО ДЛЯ ДЕШИФРОВАНИЯ: ')
         for i in range(len(a)):
             if a[i] in ds:
                 d = a[i]
