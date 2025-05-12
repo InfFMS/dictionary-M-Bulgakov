@@ -6,3 +6,16 @@
 # Абракадабра
 # Вывод
 # а-5 б-2 д-1 к-1 р-2
+s = input().lower()
+d = {}
+for i in range(len(s)):
+    counter = 1
+    if i == 0:
+        d[s[0]] = 1
+    else:
+        for j in range(i):
+            if s[j] == s[i]:
+                counter += 1
+            d[s[i]] = str(counter)
+    print(str(s[i])[1:-1:])
+print(d)

@@ -3,3 +3,9 @@
 # Пример ввода
 # яблоки сливы груши персики манго киви апельсины
 # 34 56 23 89 55 32 11
+l1=  input().split()
+l2 = input().split()
+d = {}
+for i in range(len(l1)):
+    d[str(l1[i])]=str(l2[i])
+print(d)
